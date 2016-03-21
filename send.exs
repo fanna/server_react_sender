@@ -22,7 +22,7 @@ end
 
 data = %{:status => Send.random_status(), :rack => Send.random_rack(), :server => Send.random_server(), :cpu => Send.random_cpu()}
 payload = :erlang.term_to_binary(data)
-{:ok, connection} = AMQP.Connection.open
+{:ok, connection} = AMQP.Connection.open "amqp://URXUg6J0:7HBdTaSietQgyQBvdiCMZpIrJIbQIF64@excited-nelthilta-31.bigwig.lshift.net:10286/ch4tOy6aLnX0"
 {:ok, channel} = AMQP.Channel.open(connection)
 AMQP.Queue.declare(channel, "hello")
 AMQP.Basic.publish(channel, "", "hello", payload)

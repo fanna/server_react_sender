@@ -14,7 +14,3 @@ then
 ```
 mix run send.ex
 ```
-after that
-```
-mix run receive.exs
-```
