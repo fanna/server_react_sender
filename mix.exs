@@ -30,6 +30,7 @@ defmodule ServerReactSender.Mixfile do
     [
       {:amqp, "~> 0.1.4"},
       {:json, "~> 0.3.0"},
+      {:poison, "~> 2.0"}
     ]
   end
 end

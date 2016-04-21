@@ -1,22 +1,71 @@
-defmodule Send do
-  def random_status() do
-    list = [true, false]
-    Enum.random(list)
-  end
+#status = File.read "status.json"
 
-  def random_server() do
-    list = [0, 1, 2, 3, 4, 5]
-    Enum.random(list)
-  end
+list = ~s([
+  {id: 1, cpus:[
+    {id: 1, active: true},
+    {id: 2, active: false},
+    {id: 3, active: false},
+    {id: 4, active: false}]
+  },
+  {id: 2, cpus:[
+    {id: 1, active: true},
+    {id: 2, active: false},
+    {id: 3, active: true},
+    {id: 4, active: false}]
+  },
+  {id: 3, cpus:[
+    {id: 1, active: false},
+    {id: 2, active: false},
+    {id: 3, active: false},
+    {id: 4, active: false}]
+  },
+  {id: 4, cpus:[
+    {id: 1, active: false},
+    {id: 2, active: false},
+    {id: 3, active: false},
+    {id: 4, active: false}]
+  },
+  {id: 5, cpus:[
+    {id: 1, active: false},
+    {id: 2, active: false},
+    {id: 3, active: false},
+    {id: 4, active: false}]
+  },
+  {id: 6, cpus:[
+    {id: 1, active: false},
+    {id: 2, active: false},
+    {id: 3, active: false},
+    {id: 4, active: false}]
+  },
+  {id: 7, cpus:[
+    {id: 1, active: false},
+    {id: 2, active: false},
+    {id: 3, active: false},
+    {id: 4, active: false}]
+  },
+  {id: 8, cpus:[
+    {id: 1, active: false},
+    {id: 2, active: false},
+    {id: 3, active: false},
+    {id: 4, active: false}]
+  },
+  {id: 9, cpus:[
+    {id: 1, active: false},
+    {id: 2, active: false},
+    {id: 3, active: false},
+    {id: 4, active: false}]
+  },
+  {id: 10, cpus:[
+    {id: 1, active: false},
+    {id: 2, active: false},
+    {id: 3, active: false},
+    {id: 4, active: false}]
+  }
+])
 
-  def random_cpu() do
-    list = [0, 1, 2, 3]
-    Enum.random(list)
-  end
-end
-
-data = %{:status => Send.random_status(),  :server => Send.random_server(), :cpu => Send.random_cpu()}
+data = %{:list => Poison.encode!(list)}
 payload = :erlang.term_to_binary(data)
+
 {:ok, connection} = AMQP.Connection.open "amqp://URXUg6J0:7HBdTaSietQgyQBvdiCMZpIrJIbQIF64@excited-nelthilta-31.bigwig.lshift.net:10286/ch4tOy6aLnX0"
 {:ok, channel} = AMQP.Channel.open(connection)
 AMQP.Queue.declare(channel, "hello")

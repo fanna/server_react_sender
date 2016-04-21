@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "cpus": [
+      {
+        "id": 1,
+        "active": true
+      },
+      {
+        "id": 2,
+        "active": false
+      },
+      {
+        "id": 3,
+        "active": false
+      },
+      {
+        "id": 4,
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "cpus": [
+      {
+        "id": 1,
+        "active": false
+      },
+      {
+        "id": 2,
+        "active": false
+      },
+      {
+        "id": 3,
+        "active": false
+      },
+      {
+        "id": 4,
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "cpus": [
+      {
+        "id": 1,
+        "active": false
+      },
+      {
+        "id": 2,
+        "active": false
+      },
+      {
+        "id": 3,
+        "active": false
+      },
+      {
+        "id": 4,
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "cpus": [
+      {
+        "id": 1,
+        "active": false
+      },
+      {
+        "id": 2,
+        "active": false
+      },
+      {
+        "id": 3,
+        "active": false
+      },
+      {
+        "id": 4,
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "cpus": [
+      {
+        "id": 1,
+        "active": false
+      },
+      {
+        "id": 2,
+        "active": false
+      },
+      {
+        "id": 3,
+        "active": false
+      },
+      {
+        "id": 4,
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "cpus": [
+      {
+        "id": 1,
+        "active": false
+      },
+      {
+        "id": 2,
+        "active": false
+      },
+      {
+        "id": 3,
+        "active": false
+      },
+      {
+        "id": 4,
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "cpus": [
+      {
+        "id": 1,
+        "active": false
+      },
+      {
+        "id": 2,
+        "active": false
+      },
+      {
+        "id": 3,
+        "active": false
+      },
+      {
+        "id": 4,
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "cpus": [
+      {
+        "id": 1,
+        "active": false
+      },
+      {
+        "id": 2,
+        "active": false
+      },
+      {
+        "id": 3,
+        "active": false
+      },
+      {
+        "id": 4,
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "cpus": [
+      {
+        "id": 1,
+        "active": false
+      },
+      {
+        "id": 2,
+        "active": false
+      },
+      {
+        "id": 3,
+        "active": false
+      },
+      {
+        "id": 4,
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "cpus": [
+      {
+        "id": 1,
+        "active": false
+      },
+      {
+        "id": 2,
+        "active": false
+      },
+      {
+        "id": 3,
+        "active": false
+      },
+      {
+        "id": 4,
+        "active": false
+      }
+    ]
+  }
+]
