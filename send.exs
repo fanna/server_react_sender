@@ -63,7 +63,7 @@ list = ~s([
   }
 ])
 
-data = %{:list => Poison.encode!(list)}
+data = %{:list => list}
 payload = :erlang.term_to_binary(data)
 
 {:ok, connection} = AMQP.Connection.open "amqp://URXUg6J0:7HBdTaSietQgyQBvdiCMZpIrJIbQIF64@excited-nelthilta-31.bigwig.lshift.net:10286/ch4tOy6aLnX0"
